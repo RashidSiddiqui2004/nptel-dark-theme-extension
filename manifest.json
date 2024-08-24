@@ -4,8 +4,14 @@
     "version": "1.0",
     "description": "Transform your SWAYAM NPTEL journey with our cool dark theme🌙! Enjoy a more comfortable, eye-friendly interface that makes studying late nights a breeze for all dedicated students. 📚✨",
     "permissions": [
-        "activeTab"
+        "storage",
+        "tabs",
+        "activeTab",
+        "webNavigation"
     ],
+    "background": {
+        "service_worker": "background.js"
+    },
     "content_scripts": [
         {
             "matches": [
