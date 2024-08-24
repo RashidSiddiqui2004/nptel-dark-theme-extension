@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Dark Theme Extension for NPTEL",
+    "version": "1.0",
+    "description": "Transform your SWAYAM NPTEL journey with our cool dark theme🌙! Enjoy a more comfortable, eye-friendly interface that makes studying late nights a breeze for all dedicated students. 📚✨",
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://onlinecourses.nptel.ac.in/*/unit?unit=*&assessment=*",
+                "https://onlinecourses.nptel.ac.in/*/unit?unit=*&lesson=*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "css": [
+                "styles.css"
+            ]
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}

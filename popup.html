@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Theme Toggle</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #282c34;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            width: 250px;
+        }
+
+        h3 {
+            margin-bottom: 20px;
+            font-size: 18px;
+            color: #61dafb;
+        }
+
+        .toggle-container {
+            display: inline-block;
+            position: relative;
+            width: 60px;
+            height: 30px;
+        }
+
+        .toggle-slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: 0.4s;
+            border-radius: 34px;
+        }
+
+        .toggle-slider:before {
+            position: absolute;
+            content: "";
+            height: 22px;
+            width: 22px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: 0.4s;
+            border-radius: 50%;
+        }
+
+        input:checked+.toggle-slider {
+            background-color: #61dafb;
+        }
+
+        input:checked+.toggle-slider:before {
+            transform: translateX(28px);
+        }
+
+        input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .status {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #61dafb;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>NPTEL Dark Mode</h3>
+
+    <button id="toggleDarkMode">NPTEL Dark Mode</button>
+
+    <label class="toggle-container">
+        <input type="checkbox" id="darkModeToggle">
+        <span class="toggle-slider"></span>
+    </label>
+    
+    <div class="status" id="statusText">Off</div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>

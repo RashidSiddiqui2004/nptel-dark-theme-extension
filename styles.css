@@ -1,0 +1,15 @@
+/* Default styles if the dark theme is toggled on at the start */
+body.dark-theme {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* Example of additional styling */
+.navbar.dark-theme,
+.footer.dark-theme {
+    background-color: #1e1e1e;
+}
+
+a.dark-theme {
+    color: #bb86fc;
+}
