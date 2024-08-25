@@ -137,6 +137,33 @@ function applyDarkTheme() {
         }
     }
 
+    // Check if .modal-content element exists
+    const assignmentSubmittedMsgPopup = document.querySelector('.modal-body');
+    if (assignmentSubmittedMsgPopup) {
+        assignmentSubmittedMsgPopup.style.backgroundColor = "#812222";
+        assignmentSubmittedMsgPopup.style.fontStyle = "italic";
+    } else {
+        console.warn('.modal-content element not found.');
+    }
+
+    // Check if .assessment-pop-up element exists
+    const assignmentMsgPopup = document.querySelector('.assessment-pop-up');
+    if (assignmentMsgPopup) {
+        assignmentMsgPopup.style.backgroundColor = "#555";
+    } else {
+        console.warn('.assessment-pop-up element not found.');
+    }
+
+    // Check if #assessment-not-all-attempt-submit element exists
+    const assignmentNotAllAttempt = document.querySelector('#assessment-not-all-attempt-submit');
+    if (assignmentNotAllAttempt) {
+        assignmentNotAllAttempt.style.backgroundColor = '#40da9d';
+        assignmentNotAllAttempt.style.color = '#060606';
+    } else {
+        console.warn('#assessment-not-all-attempt-submit element not found.');
+    }
+
+
     // handle sidebar
 
     const sidebarButtons = document.querySelectorAll(".unit_heading");
@@ -191,6 +218,7 @@ function applyDarkTheme() {
     document.querySelectorAll('.qt-question').forEach(elem => {
         elem.style.color = '#ffffff';
     });
+
 
     // // Select the input field
     // const inputField = document.querySelectorAll('input');
@@ -358,6 +386,23 @@ function applyLightTheme() {
         videoTranscriptDiv.style.backgroundColor = '';
         videoTranscriptDiv.style.borderColor = '';
     }
+
+    const assignmentSubmittedMsgPopup = document.querySelector('.modal-content');
+    if (assignmentSubmittedMsgPopup) {
+        assignmentSubmittedMsgPopup.style.backgroundColor = ""; // Reset to default
+    }
+
+    const assignmentMsgPopup = document.querySelector('.assessment-pop-up');
+    if (assignmentMsgPopup) {
+        assignmentMsgPopup.style.backgroundColor = ""; // Reset to default
+    }
+
+    const assignmentNotAllAttempt = document.querySelector('#assessment-not-all-attempt-submit');
+    if (assignmentNotAllAttempt) {
+        assignmentNotAllAttempt.style.backgroundColor = ""; // Reset to default
+        assignmentNotAllAttempt.style.color = ""; // Reset to default
+    }
+
 }
 
 // Function to toggle dark theme
