@@ -16,7 +16,7 @@ NPTEL (National Programme on Technology Enhanced Learning) provides online cours
 To install and use the NPTEL Dark Mode Chrome Extension, follow these steps:
 
 ### Fork the Repository
-Visit the [https://github.com/RashidSiddiqui2004/nptel-dark-theme-extension](NPTEL Dark theme repository) on GitHub.
+Visit the [https://github.com/RashidSiddiqui2004/nptel-dark-theme-extension] (NPTEL Dark theme repository) on GitHub.
 Click the "Fork" button at the top right of the page to create your own copy of the repository.
 
 ## Load the Extension in Chrome
